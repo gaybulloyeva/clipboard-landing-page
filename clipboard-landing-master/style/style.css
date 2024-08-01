@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 330px;
+    background-image: url('../images/bg-header-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* beginning page */
+
+.beginning-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.beginning-page img {
+    margin-top: 110px;
+}
+
+.beginning-page_text {
+    margin-top: 60px;
+}
+
+.beginning-page_text h1 {
+    font-size: 45px;
+}
+
+.beginning-page_text p {
+    margin-top: 15px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+/* buttons */
+
+.beginning-btn button {
+    margin-top: 40px;
+    border: none;
+    border-radius: 23px;
+    width: 200px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.iOS {
+    margin-right: 15px;
+    background-color: hsl(171, 66%, 44%);
+}
+
+.iOS:hover {
+    box-shadow: 10px 3px 30px 1px hsl(173, 77%, 88%);
+    transition: 0.3s;
+}
+
+.Mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.Mac:hover {
+    box-shadow: 5px 3px 30px 1px hsl(234, 74%, 92%);
+    transition: 0.3s;
+}
+
+
+/* snippets (second page) */
+
+.second-page {
+    margin: 150px auto;
+    text-align: center;
+}
+
+.comp-img {
+    width: 750px;
+    height: 570px;
+    overflow: hidden;
+    transform: translateX(-40px);
+}
+
+.second-page img {
+    transform: translateX(-40px);
+}
+
+.second-page h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.second-page p {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    text-align: start;
+}
+
+.categories-text {
+    margin: 80px 0 0 100px;
+    width: 370px;
+    height: 400px;
+}
+
+.categories-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.categories-text p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* third page access  */
+
+.third-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.third-page h2 {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.third-page p {
+    line-height: 30px;
+    margin: 20px 430px;
+    font-size: 15px;
+}
+
+.third-page img {
+    margin-top: 50px;
+    width: 830px;
+    height: 530px;
+}
+
+
+@media only screen and (max-width:700px){
+    .third-page img{
+        width: 200px;
+        height: 100px;
+    }
+}
+
+
+/* fourth page */
+
+.fourth-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-page-title {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.fourth-page-description {
+    line-height: 30px;
+    margin: 20px 430px;
+    font-size: 15px;
+}
+
+.icons-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width:700px) {
+    .icons-section{
+        flex-direction: column;
+    }
+}
+
+.icons-section div {
+    margin: 60px 0;
+    width: 400px;
+    height: 200px;
+    padding: 0 30px;
+}
+
+.icons-section p {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.icons-section h3 {
+    padding-top: 30px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.plain-text {
+    padding-top: 7px;
+}
+
+.preview {
+    padding-top: 7px;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0 0 110px;
+}
+
+@media only screen and (max-width:700px) {
+    .logo-section{
+        flex-direction: column;
+    }
+
+    .logo-section div{
+        margin-bottom: 100px;
+    }
+}
+
+.logo-section div {
+    width: 250px;
+}
+
+
+/* fifth page  */
+
+.fifth-page {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth-page h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.fifth-page p {
+    line-height: 30px;
+    margin: 20px 430px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    background-color: hsla(202, 11%, 66%, 0.155);
+    padding-right: 160px;
+}
+
+.logo img {
+    margin-left: 100px;
+    width: 70px;
+    height: 70px;
+}
+
+footer p {
+    font-size: 20px;
+    color: hsl(210, 10%, 33%);
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.footer-text1 p:first-child {
+    margin-bottom: 20px;
+}
+
+.footer-text2 p:first-child {
+    margin-bottom: 20px;
+}
+
+.footer-text3 p:first-child {
+    margin-bottom: 46px;
+}
+
+.sites-logo {
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.sites-logo img {
+    margin-left: 30px;
+}
+
+.sites-logo img:hover{
+    fill:hsl(171, 66%, 44%);
+}
